@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: royalblue;
+                color: pink;
+                text-align: center;
+            }
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+              .topnav {
+                overflow: hidden;
+                background-color: hotpink;
+            }
+            .topnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover{
+                background-color: powderblue;
+                color: burlywood;
+            }
+            .topnav a:active{
+                 background-color: powderblue;
+                color: burlywood;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <section>
+            <img class="mySlides" src="---.png" style="height:500px ;">
+            <img class="mySlides" src="-0o0o.png" style="height:500px ;">
+            <img class="mySlides" src="Bday wish.jpg" style="height:500px ;">
+            <img class="mySlides" srcr="Spotlight.png" style="height:500px ;">
+        </section>
+        
+         
+        <div class="topnav">
+            <a class="active" href="#home">home</a>
+            <a href="#">About_us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact_us</a>
+        </div>
+        <script>
+            var myIndex=0;
+            carousel();
+            function carousel(){
+                var i;
+                var x=document.getElementsByClassName("mySlides");
+                for(i=0;i< x.length;i++){
+                    x[i].style.display="none"
+                }
+                myIndex++;
+                if (myIndex > x.length){myIndex=1}
+                x[myIndex-1].style.display="block";
+                setTimeout(carousel,3000);
+            }
+        </script>
+       
+        <div class="footer" >
+            <p>@copy all rights and reserved by Leisa Agrawal</p>
+        </div>
+    </body>
+</html>
