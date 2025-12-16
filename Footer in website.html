@@ -35,6 +35,61 @@
                  background-color: powderblue;
                 color: burlywood;
             }
+            .pimg1,.pimg2,.pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pimg1 {
+    background-image:url('pizza.jpg');
+    min-height: 100%;
+}
+.pimg2 {
+    background-image:url('pizza.jpg');
+    min-height: 100px;
+}
+.pimg3 {
+    background-image:url('pizza.jpg');
+    min-height: 100px;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: pink;
+    color: red;
+}
+.section-dark{
+    background-color: plum;
+    color: maroon;
+}
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size:27px ;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: palevioletred;
+    color: antiquewhite;
+    padding: 20px;
+}
+.ptext .border.trans{
+    background-color: transparent;
+}
+@media(max-width:568px){
+    .pimg1,.pimg2,.pimg3{
+        background-attachment: scroll;
+    }
+}
             
         </style>
     </head>
@@ -46,11 +101,22 @@
             <a href="Adresses.html">adresses</a>
             <a href="contactus.html">Contact_us</a>
         </div>
-         <section>
-            <img class="mySlides" src="IMG_0016.JPG" style="height:500px ;">
-            <img class="mySlides" src="IMG_0021.JPG" style="height:500px ;">
-            <img class="mySlides" srcr="IMG_0023.JPG" style="height:500px ;">
-        </section>
+         <span class="border trans" style="font-size: 40px;">
+        <center>welcome all to this website</center>
+    </span><br>
+    <section class="section section-dark">
+        <h2>Nirvana</h2>
+        <p>
+            hello,welcome to our restrant website
+        </p>
+    </section>
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border trans">
+            </span>
+        </div>
+    </div>
+         
         <script>
             var myIndex=0;
             carousel();
@@ -66,7 +132,15 @@
                 setTimeout(carousel,3000);
             }
         </script>
-       
+        <p>PIZZA</p>
+         <img src="pizza.jpg" style="width: 200px; height: 200px;">
+         <p>pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.</p>
+        <hr>
+        <p>FRENCH FRIES</p> 
+        <img src="OIP.jpeg" style="width: 200px; height: 200px;">
+        <p>French fries,[a] or simply fries, also known as chips,[b] and finger chips (Indian English),[2] are batonnet or julienne-cut[3] deep-fried potatoes of disputed origin. They are prepared by cutting potatoes into even strips, drying them, and frying them, usually in a deep fryer. Pre-cut, blanched, and frozen russet potatoes are widely used, and sometimes baked in a regular or convection oven, such as an air fryer.
+
+French fries are served hot, either soft or crispy, and are generally eaten as part of lunch or dinner or by themselves as a snack, and they commonly appear on the menus of diners, fast food restaurants, pubs, and bars. They are typically salted and may be served with ketchup, vinegar, mayonnaise, tomato sauce, or other sauces. Fries can be topped more heavily, as in the dishes of poutine, loaded fries or chili cheese fries, and are occasionally made from sweet potatoes instead of potatoes.</p>    
         <div class="footer" >
             <p>@copy all rights and reserved by Leisa Agrawal</p>
         </div>
